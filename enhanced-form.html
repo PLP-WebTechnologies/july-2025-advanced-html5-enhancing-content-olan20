@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join my Python Programming Community to master Python and connect with coders.">
+    <meta name="keywords" content="Python programming, coding community, AI, data science">
+    <meta name="author" content="Python Hub">
+    <title>Python Hub - Join the Community</title>
+</head>
+<body>
+    <header>
+        <h1>My Python Hub</h1>
+        <p>Master Python and code for the future.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">Why Python?</a></li>
+            <li><a href="#form">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to my Python Hub</h2>
+            <p>Join our community to master Python, explore AI, and connect with other enthusiatic coders.</p>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Why Learn Python?</h2>
+            <p>Python is a versatile, beginner-friendly language with powerful applications.</p>
+            <ul>
+                <li>Read and write code with clear, simple syntax.</li>
+                <li>Build AI and machine learning models with ease.</li>
+                <li>Develop web apps, automation, and more.</li>
+            </ul>
+            <h3 id="python-table-heading">Fields and Applications of Python</h3>
+            <table aria-labelledby="python-table-heading" aria-describedby="python-table-desc">
+                <thead>
+                    <tr>
+                        <th scope="col">Field</th>
+                        <th scope="col">Application</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data Science</td>
+                        <td>Analyze data with pandas and NumPy.</td>
+                    </tr>
+                    <tr>
+                        <td>AI & Machine Learning</td>
+                        <td>Build models with TensorFlow.</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Create apps with Django or Flask.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="python-table-desc">The table above highlights Python’s key applications across modern coding fields.</p>
+            <figure>
+                <img src="https://media.gettyimages.com/id/1451456915/photo/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=2048x2048&w=gi&k=20&c=Mhy88KLGNb6eyFsZ2WsCsmzdbIbmUAUNdkCApiDPMMg=" alt="A female freelance developer coding Python on two screens in a modern workspace." width="300">
+                <figcaption>Python is the number 1 coding language.</figcaption>
+            </figure>
+        </section>
+
+        <section id="form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Join Our Python Community</h2>
+            <form action="/submit" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]{2,50}" aria-describedby="name-error">
+                    <p id="name-error" class="error" hidden>Please enter a valid name (2-50 characters, letters and spaces only).</p>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" aria-describedby="email-error">
+                    <p id="email-error" class="error" hidden>Please enter a valid email address.</p>
+
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="\+?[0-9]{10,15}" autocomplete="tel" aria-describedby="phone-error">
+                    <p id="phone-error" class="error" hidden>Please enter a valid phone number (10-15 digits).</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Coding Profile</legend>
+                    <label for="python-level">Python Skill Level:</label>
+                    <select id="python-level" name="python-level" required aria-describedby="level-error">
+                        <option value="">Select your level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <p id="level-error" class="error" hidden>Please select your Python skill level.</p>
+
+                    <label for="interests">Python Interests (Select at least one):</label>
+                    <select id="interests" name="interests" multiple required aria-describedby="interests-error">
+                        <option value="data-science">Data Science</option>
+                        <option value="ai-ml">AI & Machine Learning</option>
+                        <option value="web-dev">Web Development</option>
+                        <option value="automation">Automation</option>
+                    </select>
+                    <p id="interests-error" class="error" hidden>Please select at least one interest.</p>
+
+                    <label for="experience">Years Coding with Python:</label>
+                    <input type="number" id="experience" name="experience" min="0" max="50" value="0" aria-describedby="experience-error">
+                    <p id="experience-error" class="error" hidden>Please enter a valid number (0-50).</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+
+                    <label for="join-date">Join Date (Read-only):</label>
+                    <input type="date" id="join-date" name="join-date" readonly value="2025-08-13">
+                </fieldset>
+
+                <label for="comments">Why Join Us?</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Tell us why you love Python!" maxlength="500" aria-describedby="comments-error"></textarea>
+                <p id="comments-error" class="error" hidden>Please keep comments under 500 characters.</p>
+
+                <button type="submit">Join Now</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
